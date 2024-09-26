@@ -30,6 +30,7 @@ nav {
 
 .navbar-brand {
     margin-left: 20px;
+    display: inline-block;
 }
 
 button.navbar-toggler{
@@ -42,4 +43,59 @@ margin-right: 10px;
 
 img.dibley {
     max-width: 100%
+}
+
+/*/ GRID PAGE /*/
+.wrapper {
+    display:grid;
+    grid-template-columns: repeat(3,1f);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header"
+        "main sidebar sidebar"
+        "main sidebar2 sidebar3"
+        "footer footer footer" ;
+    grid-gap:10px;
+}
+
+.box1{
+    grid-area: header;
+    border: 1px solid black;
+    height: 200px;
+    background-color: #cc6600 ;
+}
+
+.box2{
+    grid-area: main;
+    border: 1px solid black;
+    height:200px;
+    background-color: #99ff99;
+}
+
+.box3{
+    grid-area: sidebar;
+    border: 1px solid black;
+    height: 100px;
+    background-color: #99ff99;
+}
+
+.box4{
+    grid-area: sidebar2;
+    border: 1px solid black;
+    height: 100px;
+    background-color: #99ff99;
+}
+
+.box5{
+    grid-area: sidebar3;
+    border: 1px solid black;
+    height: 100px;
+    background-color: #99ff99;
+}
+
+.box6{
+    grid-area: footer;
+    border:1px solid black;
+    height: 100px;
+    background-color: #cc6600;
 }

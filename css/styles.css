@@ -157,3 +157,21 @@ img.dibley {
 .contact-form button:hover {
     background-color: #4cae4c;
 }
+
+/*/ FOOTER /*/
+
+footer {
+    color: black; 
+    display:inline;
+    text-align: center; 
+    text-size: 3px;
+    padding: 20px; 
+    position: relative;
+    bottom: 0; 
+    width: 10%;
+    height: 10%;
+        }
+               
+ footer a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }

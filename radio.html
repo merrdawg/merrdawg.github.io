@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Homepage to my website">
-  <meta name="author" content="A paragraph from Week 2 and Grateful Dead dancing bear">
+  <meta name="description" content="Weekly playlists. Punk rock, metal, psychedelic, world music">
+  <meta name="author" content="Week 1 is: Song - Lexicon Devil, Artist - The Germs">
   <link rel="icon" type="image/gif" href="images/bear.gif">
-  <title>Merrick Murtaugh</title>
+  <title>Radio: Merrick Murtaugh</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
   <!-- Bootstrap core CSS -->
   <link href="css/styles.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -22,13 +24,13 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item ">
         <a class="nav-link" href="index.html">Home</a>
-      <li class="nav-item active">
-        <a class="nav-link" href="grid.html">Grid</a>
+      <li class ="nav-item">
+        <a class ="nav-link" href="grid.html">Grid</a>
       <li class="nav-item">
         <a class="nav-link" href="radio.html">Radio</a>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="about.html">About</a>
       <li class="nav-item">
         <a class="nav-link" href="contact.html">Contact</a>
@@ -38,29 +40,30 @@
 </nav>
 
 <main role="main" class="container-fluid">
+  <h1>Merrick Mix#1</h1>
+  <!-- Bootstrap 'Spinner' component -->
+  <div id="spinner" class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
 
-  <div class="container home_2col">
-    <div class="row">
-      <div class="col">
-        <img src="images/bear.gif" class="rounded d-block dibley" alt="...">
-      </div>
-      <div class="col">
-        <h1>Merrick Murtaugh: WEBD-225</h1>
-      </div>
+  <div class="player-container">
+        <audio id="audio-player" src="audio/lexicon_devil.mp3"></audio>
+
+        <div class="controls">
+            <button id="play-btn">Play</button>
+            <button id="pause-btn">Pause</button>
+        </div>
     </div>
-  </div><!--end 2col-->
+  <p> This weeks theme: Old audio files I found on my Google Drive.</p>   
+</main> <!--.container -->
 
-  <p>Hi, my name's Merrick</p>
-  <p>This website is my project for WEBD-225</p>
-<article>
-  <h2> Week 2</h2>
-  <p> In Week 2, I've learned how to create live, static webpages from GitHub repo's.  I've learned how to make pull requests and when to use them, and I'm starting to understand branches and merging as well.</p>
-</article>
-</main><!-- /.container -->
+    <!-- Link to JS for audio player -->
+    <script src="player.js"></script>
 
-<!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -68,6 +71,7 @@
 <footer>
   <p>2024.</p>
 </footer>
+
 
 </body>
 </html>
